@@ -78,7 +78,8 @@ class CampsiteInfo extends Component {
         return (
             <ScrollView>
              <RenderCampsite campsite={campsite}
-                   
+                    favorite={this.state.favorite}
+                    markFavorite={() => this.markFavorite()}
                 />
             <RenderComments comments={comments}/>
             </ScrollView>
